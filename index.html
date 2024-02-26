@@ -3,14 +3,316 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./style.css" />
-    <title>Sujan Portfolio</title>
+    <title>Sujan's Portfolio</title>
   </head>
   <body>
-    <div class="wrapper"></div>
+    <!-- dark mode toggler -->
+    <label for="darkMode" id="darkmode-toggler">
+      <i class="fa-solid fa-circle-half-stroke"></i>
+    </label>
+    <input type="checkbox" id="darkMode" />
+    <div class="wrapper">
+      <!-- for dark mode toggler -->
+
+      <!-- navbar -->
+      <header>
+        <div class="header container flex">
+          <div class="flex logo">
+            <div class="playfair-display">Sujan</div>
+            <div class="line">Full-Stack Developer</div>
+          </div>
+          <div class="menu">
+            <ul class="flex navigation">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#Skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- hero -->
+      <section class="hero-section container">
+        <div class="grid hero">
+          <div class="left flex">
+            <div>Hey there! I am <span>Sujan Bikram Thapa</span>,</div>
+            <div class="tag">Full Stack Developer</div>
+            <span>based in Sydney.</span>
+            <div>
+              <a
+                href="./assets/Sujan_Bikram_Thapa_-_Full_Stack_Developer.pdf"
+                download
+              >
+                <button>
+                  Download CV <i class="fa-solid fa-download"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="right flex">
+            <img src="./assets/profile-picture.png" alt="" width="100%" />
+          </div>
+        </div>
+      </section>
+
+      <!-- banner -->
+      <section class="flex banner container">
+        <div class="flex info-content">
+          <div class="flex icon-container">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div>
+            <span>IT</span>
+            <p>Graduation</p>
+          </div>
+        </div>
+
+        <div class="flex info-content">
+          <div class="flex icon-container">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div>
+            <span>5+</span>
+            <p>Projects</p>
+          </div>
+        </div>
+
+        <div class="flex info-content">
+          <div class="flex icon-container">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div>
+            <span>1+ Years</span>
+            <p>Experience</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- skills -->
+      <section class="skills">
+        <h2 class="title">
+          <span>Skills</span>
+        </h2>
+        <div class="container flex skills-container">
+          <div>
+            <i class="fa-brands fa-html5"></i>
+            <span>HTML</span>
+          </div>
+          <div>
+            <i class="fa-brands fa-css3-alt"></i>
+            <span>CSS</span>
+          </div>
+          <div>
+            <i class="fa-brands fa-js"></i>
+            <span>Javascript</span>
+          </div>
+          <div>
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+          </div>
+          <div>
+            <i class="fa-brands fa-figma"></i>
+            <span>Figma</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- my recent work -->
+      <section class="projects">
+        <h2 class="title"><span>My Projects</span></h2>
+        <div class="project container">
+          <div class="project-card">
+            <div class="top">
+              <img
+                src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                width="100%"
+              />
+            </div>
+            <div class="bottom">
+              <h3>Personal portfolio</h3>
+              <p>Techstack: HTML, CSS, Javascript,React</p>
+              <div class="tags flex">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="top">
+              <img
+                src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                width="100%"
+              />
+            </div>
+            <div class="bottom">
+              <h3>Personal portfolio</h3>
+              <p>Techstack: HTML, CSS, Javascript,React</p>
+              <div class="tags flex">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="top">
+              <img
+                src="https://images.unsplash.com/photo-1573867639040-6dd25fa5f597?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                width="100%"
+              />
+            </div>
+            <div class="bottom">
+              <h3>Personal portfolio</h3>
+              <p>Techstack: HTML, CSS, Javascript,React</p>
+              <div class="tags flex">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="top">
+              <img
+                src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                width="100%"
+              />
+            </div>
+            <div class="bottom">
+              <h3>Personal portfolio</h3>
+              <p>Techstack: HTML, CSS, Javascript,React</p>
+              <div class="tags flex">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="top">
+              <img
+                src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                width="100%"
+              />
+            </div>
+            <div class="bottom">
+              <h3>Personal portfolio</h3>
+              <p>Techstack: HTML, CSS, Javascript,React</p>
+              <div class="tags flex">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="top">
+              <img
+                src="https://images.unsplash.com/photo-1465447142348-e9952c393450?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                width="100%"
+              />
+            </div>
+            <div class="bottom">
+              <h3>Personal portfolio</h3>
+              <p>Techstack: HTML, CSS, Javascript,React</p>
+              <div class="tags flex">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about me -->
+
+      <section>
+        <h2 class="title"><span>About Me</span></h2>
+        <div class="about flex container">
+          <div class="sec-pic">
+            <img src="./assets/cropped_img.png" alt="" width="100%" />
+          </div>
+          <p>
+            Hello there, this is <span>Sujan Bikram Thapa</span>,
+            <span>MERN STACK Developer</span>. I'm a results-driven Software
+            Developer based in Sydney, Australia, with a passion for crafting
+            robust solutions and embracing cutting-edge technologies. With a
+            Master's degree in Applied Information Technology and hands-on
+            experience in Java, .NET, JavaScript, and more, I thrive in dynamic
+            environments where innovation meets practicality. From optimizing
+            software performance to spearheading migration projects and
+            contributing to enterprise-level applications, I bring a versatile
+            skill set honed through years of dedication and continuous learning.
+            Explore my portfolio to discover how I tackle challenges and deliver
+            impactful solutions in the ever-evolving landscape of software
+            development.
+          </p>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section class="contact">
+        <h2 class="title">
+          <span>Contact Me</span>
+        </h2>
+        <div class="flex contact-container banner">
+          <span>mail.thapasujan@gmail.com</span>
+          <button><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer>
+        <div class="footer flex container">
+          <div>
+            <span>Links</span>
+            <ul>
+              <li>Home</li>
+              <li>Skills</li>
+              <li>Projects</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div>
+            <span>Contact</span>
+            <ul>
+              <li><i class="fa-brands fa-github"></i></li>
+              <li><i class="fa-brands fa-linkedin"></i></li>
+              <li><i class="fa-brands fa-facebook"></i></li>
+              <li><i class="fa-brands fa-youtube"></i></li>
+              <li><i class="fa-brands fa-instagram"></i></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
