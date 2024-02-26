@@ -1,0 +1,14 @@
+:root {
+  --primary-theme-color: #436850;
+  --secondary-theme-color: #fbfada;
+  --primary-font-color: #12372a;
+  --secondary-font-color: #adbc9f;
+  --shadow: -5px 5px 10px 5px var(--primary-theme-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--font-theme-color);
+  text-decoration: none;
+}
