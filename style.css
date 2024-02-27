@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* color: var(--font-theme-color); */
   text-decoration: none;
 }
 
@@ -45,18 +44,6 @@ a {
 
 /* root variables */
 :root {
-  /* --color-pink: rgba(183, 75, 142, 0.676);
-  --color-dark: #2a2a2a;
-
-  --body-bg: rgb(234, 241, 245);
-  --text-color: var(--color-dark);
-  --border-color: var(--color-dark);
-
-  /* for dark mode 
-  --dark-bg: var(--color-dark);
-  --dark-text-color: #fff;
-  --dark-border-color: #fff; */
-
   --dark-bg: #436850;
   --body-bg: #fbfada;
   --text-color: #12372a;
@@ -138,8 +125,16 @@ header .header {
   transition: all 0.3s;
 }
 
+[for="hamburger-menu"],
+#hamburger-menu {
+  display: none;
+}
+
 #darkMode {
   display: none;
+}
+
+#darkMode:checked {
 }
 
 #darkMode:checked + .wrapper {
@@ -182,7 +177,7 @@ header .header {
 .left button {
   background: var(--dark-bg);
   color: white;
-  border: 1px solid --border-color);
+  border: 1px solid var(--border-color);
   padding: 0.8rem 2rem;
   border-radius: 22px;
   cursor: pointer;
@@ -229,7 +224,7 @@ header .header {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-color: var(--body-bg);
+  color: var(--body-bg);
   justify-content: center;
   align-items: center;
 }
@@ -342,4 +337,97 @@ footer span {
 }
 footer ul {
   list-style: none;
+}
+
+.wrapper > a {
+  background-color: var(--text-color);
+  color: var(--body-bg);
+  padding: 1em;
+  border-radius: 50%;
+  position: fixed;
+  right: 10%;
+  bottom: 20%;
+}
+
+section {
+  padding-top: 6em;
+}
+
+@media (max-width: 992px) {
+  .hero {
+    grid-template-areas:
+      "right"
+      "left";
+  }
+
+  .right {
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  .hero img {
+    height: 50vw;
+    gap: 3em;
+    border: 1em solid;
+  }
+  .banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20%;
+  }
+
+  .info-divider {
+    display: none;
+  }
+  .project {
+    grid-template-columns: 90%;
+    gap: 2em;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .sec-pic {
+    width: 100%;
+  }
+
+  .about p {
+    width: 100%;
+    margin: auto;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  [for="hamburger-menu"] {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    width: 250px;
+    height: 100vh;
+    left: 100vw;
+    top: 3.8em;
+    box-shadow: var(--shadow);
+    padding: 3em;
+  }
+
+  #hamburger-menu:checked + .menu {
+    display: block;
+    left: calc(100vw - 250px);
+    transition: all 1s;
+  }
+
+  .menu .navigation {
+    flex-direction: column;
+    font-size: 1.6em;
+    transition: all 1s;
+    gap: 3em;
+  }
 }
