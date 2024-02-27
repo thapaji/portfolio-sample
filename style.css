@@ -63,7 +63,7 @@ a {
 #darkmode-toggler:hover {
   cursor: pointer;
   transform: scale(1.5);
-  transition: all 0.3s;
+  transition: scale 0.3s;
 }
 
 .title {
@@ -121,7 +121,7 @@ header .header {
 }
 
 .navigation li:hover {
-  color: var(--color-pink);
+  color: blue;
   transition: all 0.3s;
 }
 
@@ -132,9 +132,6 @@ header .header {
 
 #darkMode {
   display: none;
-}
-
-#darkMode:checked {
 }
 
 #darkMode:checked + .wrapper {
@@ -408,7 +405,6 @@ section {
   }
 
   .menu {
-    display: none;
     position: absolute;
     width: 250px;
     height: 100vh;
@@ -416,18 +412,17 @@ section {
     top: 3.8em;
     box-shadow: var(--shadow);
     padding: 3em;
+    transition: left 1s;
   }
 
   #hamburger-menu:checked + .menu {
     display: block;
     left: calc(100vw - 250px);
-    transition: all 1s;
   }
 
   .menu .navigation {
     flex-direction: column;
     font-size: 1.6em;
-    transition: all 1s;
     gap: 3em;
   }
 }
